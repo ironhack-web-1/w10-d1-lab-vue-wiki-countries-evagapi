@@ -7,10 +7,10 @@ const routes = [
     component: () => import("../components/Root.vue"),
     children: [
       {
-        path: "/:code",
-        name: "code",
+        path: "/:alpha3Code",
+        name: "alpha3Code",
         component: () => import("../components/CountryDetails.vue"),
-        props: (route) => ({ code: route.params.code }),
+        props: (route) => ({ alpha3Code: route.params.alpha3Code }),
       },
     ],
   },

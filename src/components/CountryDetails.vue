@@ -46,11 +46,13 @@ export default {
   },
   computed: {
     country() {
-      return countries.find((country) => country.alpha3Code === this.code);
+      return countries.find(
+        (country) => country.alpha3Code === this.alpha3Code
+      );
     },
   },
   props: {
-    code: {
+    alpha3Code: {
       type: String,
       required: true,
     },

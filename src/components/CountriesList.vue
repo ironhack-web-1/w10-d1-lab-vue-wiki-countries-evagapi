@@ -4,8 +4,8 @@
       <div v-for="country in countries">
         <router-link
           :to="{
-            name: 'code',
-            params: { code: country.alpha3Code },
+            name: 'alpha3Code',
+            params: { alpha3Code: country.alpha3Code },
           }"
         >
           <a
