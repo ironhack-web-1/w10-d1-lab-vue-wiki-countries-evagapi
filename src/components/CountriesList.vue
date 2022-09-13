@@ -1,7 +1,7 @@
 <template>
   <div class="col-5" style="max-height: 90vh; overflow: scroll">
     <div class="list-group">
-      <div v-for="country in countries">
+      <div v-for="country in countries" class="text-center">
         <router-link
           :to="{
             name: 'alpha3Code',
