@@ -25,13 +25,7 @@
 </template>
 
 <script>
-import countries from "../countries.json";
-
 export default {
-  data() {
-    return {
-      countries,
-    };
-  },
+  props: { countries: { type: Array } },
 };
 </script>
